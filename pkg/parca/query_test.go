@@ -362,3 +362,8 @@ func (f *FakeClient) ShareProfile(ctx context.Context, c *connect.Request[v1alph
 	// TODO implement me
 	panic("implement me")
 }
+
+func (f *FakeClient) HasProfileData(ctx context.Context, c *connect.Request[v1alpha1.HasProfileDataRequest]) (*connect.Response[v1alpha1.HasProfileDataResponse], error) {
+	// TODO implement me
+	panic("implement me")
+}

@@ -1,7 +1,7 @@
 import { type DataSourceInstanceSettings, type PluginMetaInfo, PluginType } from '@grafana/data';
 import { getTemplateSrv } from '@grafana/runtime';
 
-import { defaultParcaQueryType } from './dataquery.gen';
+import { defaultParcaQueryType } from './dataquery';
 import { ParcaDataSource } from './datasource';
 import { type Query } from './types';
 

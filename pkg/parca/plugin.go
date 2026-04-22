@@ -2,6 +2,9 @@ package parca
 
 import (
 	"context"
+	"fmt"
+	"runtime"
+	"strings"
 
 	"buf.build/gen/go/parca-dev/parca/connectrpc/go/parca/query/v1alpha1/queryv1alpha1connect"
 	v1alpha1 "buf.build/gen/go/parca-dev/parca/protocolbuffers/go/parca/query/v1alpha1"
@@ -13,6 +16,23 @@ import (
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/trace"
 )
+
+var logger = backend.NewLoggerWith("logger", "tsdb.parca")
+
+func getRunContext() (string, int, string) {
+	pc := make([]uintptr, 10)
+	runtime.Callers(2, pc)
+	f := runtime.FuncForPC(pc[0])
+	file, line := f.FileLine(pc[0])
+	return file, line, f.Name()
+}
+
+func logEntrypoint() string {
+	file, line, pathToFunction := getRunContext()
+	parts := strings.Split(pathToFunction, "/")
+	functionName := parts[len(parts)-1]
+	return fmt.Sprintf("%s:%d[%s]", file, line, functionName)
+}
 
 // Make sure ParcaDatasource implements required interfaces. This is important to do
 // since otherwise we will only get a not implemented error response from plugin in
@@ -32,6 +52,11 @@ var (
 // ParcaDatasource is a datasource for querying application performance profiles.
 type ParcaDatasource struct {
 	client queryv1alpha1connect.QueryServiceClient
+}
+
+// NewDatasource creates a new datasource instance for use with datasource.Manage.
+func NewDatasource(ctx context.Context, settings backend.DataSourceInstanceSettings) (instancemgmt.Instance, error) {
+	return NewParcaDatasource(ctx, httpclient.NewProvider(), settings)
 }
 
 // NewParcaDatasource creates a new datasource instance.

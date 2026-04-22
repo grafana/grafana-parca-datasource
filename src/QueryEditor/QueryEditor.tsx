@@ -5,7 +5,7 @@ import { useMount } from 'react-use';
 import { CoreApp, type QueryEditorProps } from '@grafana/data';
 import { ButtonCascader, type CascaderOption } from '@grafana/ui';
 
-import { defaultParcaDataQuery, defaultParcaQueryType, type ParcaDataQuery as Parca } from '../dataquery.gen';
+import { defaultParcaDataQuery, defaultParcaQueryType, type ParcaDataQuery as Parca } from '../dataquery';
 import { type ParcaDataSource } from '../datasource';
 import { type ParcaDataSourceOptions, type ProfileTypeMessage, type Query } from '../types';
 
