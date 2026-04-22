@@ -2,8 +2,6 @@ module github.com/grafana/grafana-parca-datasource
 
 go 1.25.7
 
-replace github.com/grafana/grafana-parca-datasource => /Users/ismailsimsek.grafana/Documents/workspace/plugins/grafana-parca-datasource
-
 require (
 	buf.build/gen/go/parca-dev/parca/connectrpc/go v1.19.2-20260413103946-e19e4fde69b5.1
 	buf.build/gen/go/parca-dev/parca/protocolbuffers/go v1.36.11-20260413103946-e19e4fde69b5.1
