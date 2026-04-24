@@ -80,7 +80,10 @@
   },
   "overrides": {
     "@grafana/plugin-ui": {
-      "@grafana/data": "$@grafana/data"
+      "@grafana/data": "$@grafana/data",
+      "@grafana/runtime": "$@grafana/runtime",
+      "@grafana/schema": "$@grafana/schema",
+      "@grafana/ui": "$@grafana/ui"
     }
   },
   "packageManager": "npm@11.7.0"
