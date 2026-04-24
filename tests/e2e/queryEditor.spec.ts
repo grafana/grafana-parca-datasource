@@ -137,12 +137,17 @@ test.describe('Query editor', () => {
       explorePage,
       readProvisionedDataSource,
     }) => {
-      test.skip(
-        !process.env.CI && !process.env.DS_INSTANCE_HOST,
-        'Requires a reachable Parca backend; set DS_INSTANCE_HOST or run in CI'
+      const ds = await readProvisionedDataSource({ fileName: 'datasources.yml' });
+
+      // Mock /api/ds/query so the test does not need a live Parca backend.
+      await page.route('**/api/ds/query*', (route) =>
+        route.fulfill({
+          status: 200,
+          contentType: 'application/json',
+          body: JSON.stringify({ results: { A: { frames: [] } } }),
+        })
       );
 
-      const ds = await readProvisionedDataSource({ fileName: 'datasources.yml' });
       let body: Record<string, unknown> | null = null;
       const responsePromise = explorePage.waitForQueryDataResponse(async (r) => {
         if (!r.ok()) {
