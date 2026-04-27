@@ -1,16 +1,23 @@
 # Parca data source for Grafana
 
-> **Note**: This core plugin was extracted from the [grafana/grafana](https://github.com/grafana/grafana) repository
-> and is now bundled with Grafana.
+> **Note**: This core plugin was extracted from the
+> [grafana/grafana](https://github.com/grafana/grafana) repository and is now
+> developed and released from this repository.
 
 ## Overview
 
-Parca continuous profiling datasource for Grafana — a 1-2 sentence description of what this datasource does
-and what systems it connects to.
+[Parca](https://www.parca.dev/) is an open-source continuous profiling
+project. The Parca data source plugin lets Grafana query and visualize CPU,
+memory, and other profiles stored in a Parca server, so engineers can
+investigate performance regressions alongside metrics, logs, and traces.
+
+This repository hosts the standalone Parca plugin built from `pkg/main.go`
+and the frontend in `src/`, distributed through the Grafana plugin catalog.
 
 ## Requirements
 
-- Grafana 12.3.0 or later
+- Grafana 12.3.0 or later (see `dependencies.grafanaDependency` in
+  [`src/plugin.json`](./src/plugin.json)).
 
 ## Getting started
 
@@ -34,12 +41,14 @@ Full documentation is available at:
 
 https://grafana.com/docs/grafana/latest/datasources/parca/
 
+## Issues
+
+Please report bugs and feature requests at
+[grafana/grafana-parca-datasource/issues](https://github.com/grafana/grafana-parca-datasource/issues/new).
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-<!-- NOTE: Use the static CONTRIBUTING.md template from grafana-elasticsearch-datasource as the base.
-     Add plugin-specific sections (external service setup, auth docs, etc.) only if needed. -->
 
 ## License
 
