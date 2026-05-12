@@ -1,3 +1,4 @@
+/// <reference types="node" />
 // Mock for monaco-editor to avoid issues in Jest tests
 const editorInstance = {
   getValue: jest.fn(() => ''),
