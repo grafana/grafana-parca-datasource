@@ -1,6 +1,6 @@
 module github.com/grafana/grafana-parca-datasource
 
-go 1.25.7
+go 1.26.3
 
 require (
 	buf.build/gen/go/parca-dev/parca/connectrpc/go v1.19.2-20260413103946-e19e4fde69b5.1
