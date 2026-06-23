@@ -1,5 +1,7 @@
 # Parca data source for Grafana
 
+> **Deprecation notice**: This plugin is scheduled for deprecation on 2nd of January 2027 and will no longer receive updates after that time.
+
 > **Note**: This core plugin was extracted from the
 > [grafana/grafana](https://github.com/grafana/grafana) repository and is now
 > developed and released from this repository.
