@@ -1,5 +1,7 @@
 # Contributing
 
+> **Deprecation notice**: This plugin is scheduled for deprecation on 2nd of January 2027 and will no longer receive updates after that time.
+
 Thank you for your interest in contributing to the Parca data source for Grafana! We welcome contributions from the community.
 
 Feel free to [browse open issues](https://github.com/grafana/grafana-parca-datasource/issues) or open a new one. For more general guidance, see [Grafana's Contributing Guide](https://github.com/grafana/grafana/blob/main/CONTRIBUTING.md).
