@@ -25,7 +25,7 @@ export const ConfigEditor = (props: Props) => {
   return (
     <div className={styles.container}>
       <Alert severity="warning" title="Parca data source is deprecated">
-        The plugin is scheduled for deprecation on{' '}
+        The Parca plugin is scheduled for deprecation on{' '}
         {DEPRECATION_DATE} and will no longer receive updates after that time.
       </Alert>
 
