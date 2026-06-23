@@ -10,7 +10,7 @@ import {
   convertLegacyAuthProps,
 } from '@grafana/plugin-ui';
 import { config } from '@grafana/runtime';
-import { Alert, Divider, SecureSocksProxySettings, Stack, TextLink, useStyles2 } from '@grafana/ui';
+import { Alert, Divider, SecureSocksProxySettings, Stack, useStyles2 } from '@grafana/ui';
 
 import { type ParcaDataSourceOptions } from './types';
 
@@ -25,13 +25,8 @@ export const ConfigEditor = (props: Props) => {
   return (
     <div className={styles.container}>
       <Alert severity="warning" title="Parca data source is deprecated">
-        The built-in Parca data source will be removed from Grafana after v13.1.0. You can use the external Parca data
-        source plugin instead:{' '}
-        <TextLink href="https://github.com/grafana/grafana-parca-datasource" external>
-          https://github.com/grafana/grafana-parca-datasource
-        </TextLink>
-        . Please note that as part of its deprecation path, this plugin is not supported on Grafana Cloud. The plugin is
-        scheduled for deprecation on {DEPRECATION_DATE} and will no longer receive updates after that time.
+        The plugin is scheduled for deprecation on{' '}
+        {DEPRECATION_DATE} and will no longer receive updates after that time.
       </Alert>
 
       <DataSourceDescription

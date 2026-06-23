@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react';
 import { useMount } from 'react-use';
 
 import { CoreApp, type QueryEditorProps } from '@grafana/data';
-import { Alert, ButtonCascader, type CascaderOption, TextLink } from '@grafana/ui';
+import { Alert, ButtonCascader, type CascaderOption } from '@grafana/ui';
 
 import { defaultParcaDataQuery, defaultParcaQueryType, type ParcaDataQuery as Parca } from '../dataquery';
 import { type ParcaDataSource } from '../datasource';
@@ -88,13 +88,8 @@ export function QueryEditor(props: Props) {
   return (
     <>
       <Alert severity="warning" title="Parca data source is deprecated">
-        The built-in Parca data source will be removed from Grafana after v13.1.0. You can use the external Parca data
-        source plugin instead:{' '}
-        <TextLink href="https://github.com/grafana/grafana-parca-datasource" external>
-          https://github.com/grafana/grafana-parca-datasource
-        </TextLink>
-        . Please note that as part of its deprecation path, this plugin is not supported on Grafana Cloud. The plugin is
-        scheduled for deprecation on {DEPRECATION_DATE} and will no longer receive updates after that time.
+        The plugin is scheduled for deprecation on{' '}
+        {DEPRECATION_DATE} and will no longer receive updates after that time.
       </Alert>
       <EditorRows>
         <EditorRow stackProps={{ wrap: false, gap: 1 }}>
