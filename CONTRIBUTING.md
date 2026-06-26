@@ -10,12 +10,18 @@ This project adheres to the [Grafana Code of Conduct](https://github.com/grafana
 
 ## Prerequisites
 
-- [Git](https://git-scm.com/)
-- [Go](https://golang.org/dl/) (see [go.mod](go.mod) for the minimum required version)
-- [Mage](https://magefile.org/)
-- [Node.js LTS](https://nodejs.org)
-- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (see [package.json](package.json) for the minimum required version)
-- [Docker](https://docs.docker.com/get-docker/)
+| Tool                              | Notes                                    |
+| --------------------------------- | ---------------------------------------- |
+| [Git](https://git-scm.com/)       | Version control                          |
+| [Go](https://go.dev/)             | See `go.mod` for minimum version         |
+| [Mage](https://magefile.org/)     | Backend build tool                       |
+| [Node.js LTS](https://nodejs.org) | See `.nvmrc` for the pinned version      |
+| [npm](https://www.npmjs.com/)     | See `package.json` for minimum version   |
+| [Docker](https://www.docker.com/) | Required for local Grafana and e2e tests |
+
+## Development
+
+For full setup instructions, including how to run against a local [grafana/grafana](https://github.com/grafana/grafana) checkout and how to deploy the built plugin to a Kubernetes-based Grafana instance, see [DEVELOPMENT.md](DEVELOPMENT.md).
 
 ## Frontend
 
@@ -45,11 +51,13 @@ This project adheres to the [Grafana Code of Conduct](https://github.com/grafana
 
 ## Backend
 
-1. Build the backend binaries:
+Build the backend binaries for your platform:
 
-   ```shell
-   mage -v
-   ```
+```shell
+mage build:darwinARM64  # Apple Silicon
+mage build:linux        # Linux amd64
+mage -v                 # all platforms
+```
 
 ## Local development environment
 
@@ -58,8 +66,6 @@ This project adheres to the [Grafana Code of Conduct](https://github.com/grafana
 ```shell
 npm run server
 ```
-
-<!-- Add any plugin-specific environment variables or version-pinning notes here. -->
 
 ## E2E tests
 
