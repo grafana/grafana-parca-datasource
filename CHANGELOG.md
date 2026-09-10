@@ -1,5 +1,9 @@
 # Changelog
 
-## 13.1.0 (Unreleased)
+## 13.1.1
 
-Initial release.
+- Dependency updates
+
+## 13.1.0 
+
+- Initial release.
