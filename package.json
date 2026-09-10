@@ -83,7 +83,8 @@
       "@grafana/runtime": "$@grafana/runtime",
       "@grafana/schema": "$@grafana/schema",
       "@grafana/ui": "$@grafana/ui"
-    }
+    },
+    "js-yaml": "4.3.2"
   },
   "packageManager": "npm@11.19.0"
 }
