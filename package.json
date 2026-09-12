@@ -29,11 +29,11 @@
     "@testing-library/jest-dom": "6.9.1",
     "@testing-library/react": "16.3.3",
     "@types/jest": "29.5.14",
-    "@types/node": "24.13.3",
+    "@types/node": "24.13.4",
     "@types/react": "18.3.31",
     "@types/react-dom": "18.3.7",
-    "@typescript-eslint/eslint-plugin": "8.69.0",
-    "@typescript-eslint/parser": "8.69.0",
+    "@typescript-eslint/eslint-plugin": "8.70.0",
+    "@typescript-eslint/parser": "8.70.0",
     "copy-webpack-plugin": "14.0.0",
     "css-loader": "7.1.5",
     "eslint": "9.39.5",
@@ -69,11 +69,11 @@
   },
   "dependencies": {
     "@emotion/css": "11.13.5",
-    "@grafana/data": "13.1.5",
+    "@grafana/data": "13.2.1",
     "@grafana/plugin-ui": "0.17.4",
-    "@grafana/runtime": "13.1.5",
-    "@grafana/schema": "13.1.5",
-    "@grafana/ui": "13.1.5",
+    "@grafana/runtime": "13.2.1",
+    "@grafana/schema": "13.2.1",
+    "@grafana/ui": "13.2.1",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
@@ -86,5 +86,5 @@
     },
     "js-yaml": "4.3.2"
   },
-  "packageManager": "npm@11.19.0"
+  "packageManager": "npm@11.19.1"
 }
