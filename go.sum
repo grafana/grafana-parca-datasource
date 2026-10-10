@@ -1,10 +1,10 @@
-buf.build/gen/go/parca-dev/parca/connectrpc/go v1.21.0-20260523035409-ca8a9e862107.1 h1:CMuz9mlRin8wWroEy1qnG/rZ60//z9WBEFJPepYLiWg=
-buf.build/gen/go/parca-dev/parca/connectrpc/go v1.21.0-20260523035409-ca8a9e862107.1/go.mod h1:ORUWvcQjFJMKGeFfMqxXMFfJ1JYVzkKnNoPegM+87BI=
+buf.build/gen/go/parca-dev/parca/connectrpc/go/v2 v2.0.0-20260523035409-ca8a9e862107.1 h1:W8qyn2UvVDFb2MR9pnDGjx7wvvEgb1vw/4+8hX1WJxU=
+buf.build/gen/go/parca-dev/parca/connectrpc/go/v2 v2.0.0-20260523035409-ca8a9e862107.1/go.mod h1:JbZ0OssgES+0IOfF0YHxLRXPma/K6fZxefBV0/3aL4w=
 buf.build/gen/go/parca-dev/parca/protocolbuffers/go v1.36.12-20260523035409-ca8a9e862107.2 h1:yJuohiVBrS5kwQSAeywxMymAYq9ULCrBqSWxUTEda8A=
 buf.build/gen/go/parca-dev/parca/protocolbuffers/go v1.36.12-20260523035409-ca8a9e862107.2/go.mod h1:bxDxUQYtaVaZ8yDy8TTwCz/gb699CqKuuyhARyyR/OE=
 cloud.google.com/go v0.26.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
-connectrpc.com/connect v1.21.0 h1:LhqSJt7jHf5NJBo9Jq/t/9FjcYAideif0mg+qe2jCUs=
-connectrpc.com/connect v1.21.0/go.mod h1:A2ygJrukXwWy32vkCAAHNVguZrqZ+jeZ9rGRnGR4dN4=
+connectrpc.com/connect/v2 v2.0.0 h1:PVVpWl2Xv9dIWN2gijs4HK40NSnPFzLqCEEmZ8fCUQ8=
+connectrpc.com/connect/v2 v2.0.0/go.mod h1:N32OLrstcPUzkykFynnefFro3+xzSdOrZlK2jHmS/xo=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/BurntSushi/toml v1.5.0/go.mod h1:ukJfTF/6rtPPRCnwkur4qwRxa8vTRFBF0uk2lLoLwho=
 github.com/BurntSushi/toml v1.6.0 h1:dRaEfpa2VI55EwlIW72hMRHdWouJeRF7TPYhI+AUQjk=

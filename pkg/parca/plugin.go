@@ -6,9 +6,9 @@ import (
 	"runtime"
 	"strings"
 
-	"buf.build/gen/go/parca-dev/parca/connectrpc/go/parca/query/v1alpha1/queryv1alpha1connect"
+	"buf.build/gen/go/parca-dev/parca/connectrpc/go/v2/parca/query/v1alpha1/queryv1alpha1connect"
 	v1alpha1 "buf.build/gen/go/parca-dev/parca/protocolbuffers/go/parca/query/v1alpha1"
-	"connectrpc.com/connect"
+	"connectrpc.com/connect/v2"
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
 	"github.com/grafana/grafana-plugin-sdk-go/backend/httpclient"
 	"github.com/grafana/grafana-plugin-sdk-go/backend/instancemgmt"

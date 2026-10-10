@@ -3,9 +3,9 @@ module github.com/grafana/grafana-parca-datasource
 go 1.26.5
 
 require (
-	buf.build/gen/go/parca-dev/parca/connectrpc/go v1.21.0-20260523035409-ca8a9e862107.1
+	buf.build/gen/go/parca-dev/parca/connectrpc/go/v2 v2.0.0-20260523035409-ca8a9e862107.1
 	buf.build/gen/go/parca-dev/parca/protocolbuffers/go v1.36.12-20260523035409-ca8a9e862107.2
-	connectrpc.com/connect v1.21.0
+	connectrpc.com/connect/v2 v2.0.0
 	github.com/apache/arrow-go/v18 v18.7.0
 	github.com/grafana/grafana-plugin-sdk-go v0.296.4
 	github.com/magefile/mage v1.17.2
