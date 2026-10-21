@@ -1,5 +1,9 @@
 # Changelog
 
+## 13.1.3
+
+- Update Go to 1.27.3
+
 ## 13.1.2
 
 - Security: update `brace-expansion` and `basic-ftp` dependencies to patched versions
