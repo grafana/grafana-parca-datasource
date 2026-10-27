@@ -37,7 +37,15 @@ describe('QueryEditor', () => {
   it('should render options', async () => {
     setBackendSrv({ ...origBackendSrv, fetch: fetchMock });
     setup();
-    await openOptions();
+    const options = screen.getByRole('button', { name: /Options/i });
+
+    expect(options).toHaveAttribute('aria-expanded', 'false');
+    expect(screen.queryByText('Query Type')).not.toBeInTheDocument();
+
+    await userEvent.click(options);
+
+    expect(options).toHaveAttribute('aria-expanded', 'true');
+    expect(screen.getByText('Query Type')).toBeInTheDocument();
     expect(screen.getByText(/Metric/)).toBeDefined();
     expect(screen.getByText(/Profile/)).toBeDefined();
     expect(screen.getByText(/Both/)).toBeDefined();

@@ -23,6 +23,8 @@ module.exports = {
       '@lezer/common',
       '@lezer/highlight',
       '@grafana/lezer-logql',
+      // cel-js ships ESM-only; needed by @grafana/plugin-ui
+      '@marcbachmann/cel-js',
     ]),
   ],
 };
