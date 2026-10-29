@@ -1,5 +1,9 @@
 # Changelog
 
+## 13.1.5
+
+- Update backend dependencies
+
 ## 13.1.4
 
 - Dependency updates
